@@ -1,0 +1,7 @@
+{
+  "name": "embu_sacco",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
