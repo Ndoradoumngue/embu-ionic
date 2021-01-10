@@ -14,3 +14,54 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.success-message
+{
+	color: green !important;
+}
+.centered
+{
+	text-align: center;
+}
+.menu-items-list
+{
+	font-size: 15px;
+	padding: 2px;
+}
+.menu-icons
+{
+	font-size: 18px !important;
+	padding: 5px !important;
+	color: map-get($colors, primary);
+}
+.profile-image-name
+{
+	width: 75%;
+	margin-left: 10%;
+	margin-top: -62%;
+	text-align: center;
+}
+.profile-image
+{
+	width: 60% !important;
+	margin-left: 25% !important;
+	margin-top: 5% !important;
+}
+.profile-name
+{
+	font-weight: bold;
+	margin-top: 5px;
+    left: 16px;
+    right: 16px;
+    font-size: 15px;
+    color: #fbfbfb;
+}
+.menu-background
+{
+	background-color: #fff !important;
+}
+.top-bar-icons
+{
+	font-size: 10px !important;
+}
+

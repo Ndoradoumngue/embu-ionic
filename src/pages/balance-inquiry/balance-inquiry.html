@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+  	<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Balance Inquirie</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	
+	<div class="form-card">
+
+		<!-- <div class="form-title">
+			{{applicationTitle}}
+		</div>
+		<br/> -->
+
+		<div class="form-group">
+			<ion-input type="text" placeholder="Account Number" name="accountNumber" #accountNumber class="input"></ion-input>	
+		</div>
+		<div class="form-group">
+			<ion-input type="text" placeholder="Membership Code" name="membershipCode" #membershipCode class="input"></ion-input>	
+		</div>
+		<br/><br/>
+
+		<button ion-button class="login-button" type="submit" (click)="checkAccount()">Inquire</button>
+
+	</div>
+
+	<ion-card *ngFor="let account of accountData" padding>
+		<h2>Current Balance: <b>KES {{account.amount_in_account}}</b></h2>
+	</ion-card>
+
+</ion-content>

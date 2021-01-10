@@ -1,0 +1,226 @@
+page-login {
+
+	.scroll-content {
+		align-content: center;
+		display: flex;
+		flex-direction: column;
+		/*justify-content: center;*/
+	}
+	.login-container {
+		/*background: #9152f8;
+		background: -webkit-linear-gradient(top, #7579ff, #b224ef);
+		background: -o-linear-gradient(top, #7579ff, #b224ef);
+		background: -moz-linear-gradient(top, #7579ff, #b224ef);
+		background: linear-gradient(top, map-get($colors, tertiary), map-get($colors, primary));*/
+
+		background-image: url('../assets/imgs/Women-2.jpg') !important;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		width: calc(100% -520px);
+		position: relative;
+		z-index: 1;
+
+		/*background: linear-gradient(217deg, map-get($colors, primary), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, map-get($colors, tertiary), rgba(0,0,255,0) 70.71%);*/
+
+	}
+	.login-container::before {
+		content: "";
+		display: block;
+		position: absolute;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: map-get($colors, primary);
+		background: -webkit-linear-gradient(bottom, map-get($colors, primary), map-get($colors, secondary));
+		background: -o-linear-gradient(bottom, map-get($colors, primary), map-get($colors, secondary));
+		background: -moz-linear-gradient(bottom, map-get($colors, primary), map-get($colors, secondary));
+		background: linear-gradient(bottom, map-get($colors, primary), map-get($colors, secondary));
+		opacity: 0.8;
+
+		/*background: #e8519e;
+		background: -webkit-linear-gradient(bottom, #e8519e, #c77ff2);
+		background: -o-linear-gradient(bottom, #e8519e, #c77ff2);
+		background: -moz-linear-gradient(bottom, #e8519e, #c77ff2);
+		background: linear-gradient(bottom, #e8519e, #c77ff2);
+		*/
+
+		
+	}
+	.login-form-logo {
+		margin-top: 30px !important;
+	  font-size: 60px; 
+	  width: 90px;
+	  height: 90px;
+	  color: #333333;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;	  
+	  border-radius: 50%;
+	  background-color: #fff;
+	  margin: 0 auto;
+	}
+	.item {
+		background: rgba(255, 255, 255, 0);
+		margin-top: 30px !important;
+		border-bottom: 1px solid #fff !important;
+		/*border: medium none;*/
+
+		.text-input, {
+			color: #fff !important;
+		}
+		*:-moz-placeholder {
+			color: #fff !important;
+		}
+		*:-ms-input-placeholder {
+			color: #fff !important;
+		}
+		*::-webkit-input-placeholder {
+			color: #fff !important;
+		}
+		input::-moz-placeholder {
+			color: #fff !important;
+		}
+		input:-moz-placeholder {
+			color: #fff !important;
+		}
+	}
+	.item-inner {
+	    padding-right: 8px;
+	     border-bottom: none !important; 
+	}
+	.login-input {
+	  font-size: 16px;
+	  color: #fff;
+	  display: block;
+	  width: 100%;
+	  height: 45px;	
+	  padding-left: 10px !important;  
+	  padding-top: 2px !important;
+	}
+	.ion-input
+	{
+		border-bottom: 3px solid red !important;
+	}
+	.text-center
+	{
+		text-align: center !important;
+	}
+	.forgot-password
+	{
+		text-align: center;
+		text-decoration: underline;
+		color: #fff;
+
+		/*font-family: Poppins-Regular;*/
+		font-size: 16px;
+		line-height: 1.5;
+	}
+	.sign-up
+	{
+		position: absolute;
+		bottom: 0px;
+	    text-align: center;
+	    width: 90%;
+	    padding: 7px 18px 8px;
+	    background-color: map-get($colors, primary);
+	    border-radius: 50px;
+	    color: #fff;
+	    display: block;
+	    font-size: 14px;
+	    font-weight: 600;
+	    line-height: 1.25;
+
+	}
+	.top-margin-10px
+	{
+		margin-top: 20px !important;
+	}
+	.item > ion-icon, .item-inner > ion-icon {
+	    color: #fff !important;
+	}
+	.form-group
+	{
+		height: 45px !important;
+		width: 100% !important;
+		margin-top: 20px !important;
+		border: 1px solid #c8c7cc !important;
+		background-color: #fff !important;
+	}
+	.form-icon
+	{
+		width: 5% !important;
+		float: left !important;
+		margin-left: 2% !important;
+		margin-top: 10px !important;
+	}
+	.input
+	{
+		float: left !important;
+		width: 87% !important;
+		margin-left: 5% !important;		
+		/*border-bottom: 1px solid #c8c7cc !important;*/
+	}
+
+
+
+
+
+
+
+
+
+		
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*.background-background {
+		background-image: url('../assets/imgs/login_background.png'); 
+	}
+	.login-title
+	{
+		text-align: center;
+		color: map-get($colors, primary);
+		font-family: Vollkorn;
+		font-size: 25px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 500;
+		line-height: 26.4px;
+		margin-top: -10px;
+	}
+	ion-card.card{
+		box-shadow: none;
+		background: rgba(0, 0, 0, 0.5);
+		border-radius: 5px;
+	}
+	a, p,
+	ion-card-header.card-header {
+		color: #fff;
+	}
+	.list > .item-block:first-child {
+		border: medium none;
+	}
+	*/
+
+}

@@ -1,0 +1,28 @@
+<ion-content class="login-container" padding>
+	
+	<span class="login-form-logo">
+		<ion-icon item-left name="person" color="primary"></ion-icon>
+	</span>
+
+	<!-- <span class="login100-form-title">
+		Log in
+	</span> -->
+
+	<div class="form-group">
+		<ion-icon color="white" class="form-icon" item-left name="person"></ion-icon>
+		<ion-input type="text" placeholder="Username" name="username" #username class="input"></ion-input>	
+	</div>
+	<div class="form-group">
+		<ion-icon color="white" class="form-icon" item-left name="lock"></ion-icon>
+		<ion-input type="password" placeholder="Password" name="password" #password class="input"></ion-input>	
+	</div>
+	<br/><Br/>
+
+	<button class="top-margin-10px" ion-button block outline color="light" type="submit" (click)="login()">Login</button>
+	
+	<!-- <br/><br/>
+	<div class="forgot-password" (click)="forgotPassword()"><br/><b> Help! I forgot my password! </b> </div> -->
+
+	<!-- <button ion-button full (click)="goToCreateNewUser()" class="sign-up"> <ion-icon name="log-in"></ion-icon> &nbsp;&nbsp; Sign Up </button> -->
+
+</ion-content>

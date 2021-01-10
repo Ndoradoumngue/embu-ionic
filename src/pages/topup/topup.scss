@@ -1,0 +1,13 @@
+page-topup {
+
+	ion-content {
+		
+		text-align: center !important;
+		background-color: map-get($colors, background) !important;
+	}
+	.card-section
+	{
+		border-radius: 20px !important;
+	}
+
+}

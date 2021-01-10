@@ -8,11 +8,64 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+  <!-- <div class="action-section">
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+    <div class="top-up" (click)="goToTopup()">
+      <br/>
+      <h2>Top Up</h2>
+    </div>
+
+    <h2 class="amount-in-account" *ngFor="let userAccount of userData">KES {{userAccount.amount_in_user_agency_account | number}}</h2>
+    <h4 class="account-name" *ngFor="let userAccount of userData">in account</h4>
+
+  </div> -->
+
+  <ion-row class="action-row" *ngFor="let userAccount of userData">
+    <ion-col>
+      <div class="register" (click)="goToMemberRegistration()">
+        <ion-icon name="add"></ion-icon>
+        <h2>Register Member</h2>
+      </div>
+    </ion-col>
+    <ion-col>
+      <div class="deposit" (click)="goToDeposit(userAccount.amount_in_user_agency_account)">
+        <ion-icon name="briefcase"></ion-icon>
+        <h2>Member Deposit</h2>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="action-row" *ngFor="let userAccount of userData">
+    <ion-col>
+      <div class="withdraw" (click)="goToWithdraw()">
+        <ion-icon name="cash"></ion-icon>
+        <h2>Member Withdraw</h2>
+      </div>
+    </ion-col>
+    <ion-col>
+      <div class="search" (click)="goToMembersList()">
+        <ion-icon name="search"></ion-icon>
+        <h2>Search Member</h2>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="action-row" *ngFor="let userAccount of userData">
+    <ion-col>
+      <div class="balance" (click)="goToBalanceInquiry()">
+        <ion-icon name="pricetags"></ion-icon>
+        <h2>Balance Inquery<br/>.</h2>
+      </div>
+    </ion-col>
+    <ion-col>
+      <div class="generate-password" (click)="requestNewPassword()">
+        <ion-icon name="key"></ion-icon>
+        <h2>Generate Member Password</h2>
+      </div>
+    </ion-col>
+  </ion-row>
+
+<!--   <button ion-button block class="generate-password-button" (click)="requestNewPassword()">Request New Password</button> -->
+
 </ion-content>

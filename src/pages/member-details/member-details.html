@@ -1,0 +1,59 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>User Details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+	
+	<ion-card class="contact-details-card" *ngFor="let user of userData">
+		<div class="contact-names">
+			<h2>{{user.first_name}} {{user.last_name}}</h2>
+		</div>
+
+		<div class="chat-image" *ngIf="user.profile_image_url == '' || user.profile_image_url == 'null' || user.profile_image_url == null">
+			<img src="assets/imgs/user2.png">
+		</div>
+
+		<div class="chat-image" *ngIf="user.profile_image_url == '' && user.profile_image_url == 'null' && user.profile_image_url == null">
+			<img src="{{user.profile_image_url}}">
+		</div>
+
+		<div padding class="contact-details">
+
+			<ion-row>
+				<ion-col>
+					<b>Membership Code</b>
+				</ion-col>
+				<ion-col>
+					{{user.membership_code}}
+				</ion-col>
+			</ion-row>
+			<hr>
+			
+			<ion-row>
+				<ion-col>
+					<b>Tel</b>
+				</ion-col>
+				<ion-col>
+					{{user.tel}}
+				</ion-col>
+			</ion-row>
+			<hr>
+
+			<ion-row>
+				<ion-col>
+					<b>ID Number</b>
+				</ion-col>
+				<ion-col>
+					{{user.id_number}}
+				</ion-col>
+			</ion-row>
+			<hr>			
+
+		</div>
+
+	</ion-card>
+
+</ion-content>

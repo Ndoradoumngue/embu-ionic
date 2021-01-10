@@ -1,0 +1,49 @@
+page-member-details {
+
+	ion-content {
+		
+		text-align: center !important;
+		background-color: map-get($colors, background) !important;
+	}
+	.contact-details-card
+	{
+		border-radius: 10px !important;
+	}
+	.contact-names
+	{
+		background-color: map-get($colors, primary) !important;
+		color: #fff !important;
+		width: 100% !important;
+		padding: 10px !important;
+	}
+	.contact-names h2
+	{
+		color: #fff !important;
+	}
+	.call-button
+	{
+		float: left !important;
+		width: 30% !important;
+		margin-left: 5% !important;
+		color: map-get($colors, greenColor) !important;
+		border: 1px solid map-get($colors, greenColor) !important;
+	}
+	.chat-button
+	{
+		float: left !important;
+		width: 30% !important;
+		color: map-get($colors, secondary) !important;
+		border: 1px solid map-get($colors, secondary) !important;
+	}
+	.share-button
+	{
+		float: left !important;
+		width: 30% !important;
+	}
+	.contact-details
+	{
+		float: left !important;
+		clear: both !important;
+	}
+
+}

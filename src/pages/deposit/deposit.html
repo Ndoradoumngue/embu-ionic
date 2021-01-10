@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-navbar>
+  	<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Deposit</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	
+	<div class="form-card">
+
+		<!-- <div class="form-title">
+			{{applicationTitle}}
+		</div>
+		<br/> -->
+
+		<div class="form-group">
+			<ion-input type="text" placeholder="Member Number" name="memberNumber" #memberNumber class="input"></ion-input>	
+		</div>
+		<ion-item class="select-form-group">
+			<!-- <ion-icon item-left ><img class="icon" src="assets/imgs/earth.png"></ion-icon> -->
+			<ion-label class="label-name">Select Account Type</ion-label>
+			<ion-select name="accountType" #accountType required okText="Okay" cancelText="Dismiss">
+				<ion-option value="Member Deposit">Member Deposit</ion-option>
+				<ion-option value="Member Share Capital">Member Share Capital</ion-option>
+				<ion-option value="CRB">CRB</ion-option>
+				<ion-option value="Passbook">Passbook</ion-option>
+				<ion-option value="Withdrawable Account">Withdrawable Account</ion-option>
+				<ion-option value="Focus Realtor Plaza">Focus Realtor Plaza</ion-option>
+				<ion-option value="Pata Shamba Savings">Pata Shamba Savings</ion-option>
+				<ion-option value="Pata Membership">Pata Membership</ion-option>
+				<ion-option value="Pata Share Savings">Pata Share Savings</ion-option>
+				<ion-option value="Normal 1">Normal 1</ion-option>
+				<ion-option value="Normal 2">Normal 2</ion-option>
+				<ion-option value="Normal 3">Normal 3</ion-option>
+				<ion-option value="Normal 4">Normal 4</ion-option>
+				<ion-option value="Normal 5">Normal 5</ion-option>
+				<ion-option value="Normal 6">Normal 6</ion-option>
+				<ion-option value="Normal 7">Normal 7</ion-option>
+				<ion-option value="Vision Development Loan">Vision Development Loan</ion-option>
+				<ion-option value="Micro Credit Loan">Micro Credit Loan</ion-option>
+				<ion-option value="Mjengo Loan">Mjengo Loan</ion-option>
+				<ion-option value="Karibu Sacco Loan">Karibu Sacco Loan</ion-option>
+				<ion-option value="Normal Loan">Normal Loan</ion-option>
+				<ion-option value="Emergency Loan">Emergency Loan</ion-option>
+				<ion-option value="Corporate Loan">Corporate Loan</ion-option>
+				<ion-option value="Pata Shamba Pole Pole">Pata Shamba Pole Pole</ion-option>
+				<ion-option value="Pata Membership Loan">Pata Membership Loan</ion-option>
+				<ion-option value="Pata Shares Loan">Pata Shares Loan</ion-option>
+			</ion-select>	      
+		</ion-item>
+		<!-- <div class="form-group">
+			<ion-input type="text" placeholder="Account Number" name="accountNumber" #accountNumber class="input"></ion-input>	
+		</div> -->
+		<div class="form-group">
+			<ion-input type="number" placeholder="Amount" name="amount" #amount class="input"></ion-input>	
+		</div>
+		<div class="form-group">
+			<ion-input type="text" placeholder="Deposit Made By" name="depositMadeBy" #depositMadeBy class="input"></ion-input>	
+		</div>
+		<div class="form-group">
+			<ion-input type="password" placeholder="Agent Password" name="password" #password class="input"></ion-input>	
+		</div>
+		<br/><br/><br/>
+
+		<button ion-button class="login-button" type="submit" (click)="makeDeposit()">Make Deposit</button>
+
+	</div>
+
+</ion-content>

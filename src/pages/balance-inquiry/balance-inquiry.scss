@@ -1,0 +1,171 @@
+page-balance-inquiry {
+
+	ion-content {
+		
+		text-align: center !important;
+		background-color: map-get($colors, background) !important;
+	}
+	.centered
+	{
+		text-align: center !important;
+	}
+	.scroll-content {
+		align-content: center;
+		display: flex;
+		flex-direction: column;
+		/*justify-content: center;*/
+	}
+	.top-background
+	{
+		background-image: url('../assets/imgs/shopping.jpg') !important;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;		
+		width: calc(100% -520px);
+		position: relative;
+		z-index: -1;
+		height: 250px !important;
+	}
+	.logo
+	{
+		margin-top: -230px;
+		/*width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		border: 5px #699eff solid;
+		
+		margin-bottom: 50px !important;
+		z-index: 1;
+		background-color: #fff;
+		text-align: center !important;
+		margin-left: auto;*/
+	}
+	.logo img {
+		width: 100px;
+		height: 100px;
+		margin-top: 12px;
+		border-radius: 50%;
+		border: 5px #fff solid;
+	}
+	/*.top-image
+	{
+		width: 65%;
+	}*/
+	.welcome-message
+	{
+		text-align: center;
+		font-size: 1.9rem;
+		font-weight: bold;
+		margin-bottom: 5% !important;
+		text-align: center !important;
+		color: white;
+	}
+	.form-card
+	{
+		border-radius: 10px !important;
+		margin-top: 10px !important;
+		z-index: 1;
+		padding: 20px;
+		background-color: #fff !important;
+	}
+	.form-title
+	{
+		text-align: center;
+		padding: 15px;
+		color: #5a5a5a;
+		font-weight: bold;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+	}
+	.top-background::before {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: map-get($colors, darkBackground);
+	}
+
+	.login-button {
+		width: 96%;
+		margin-left: 2%;
+		border-radius: 30px;
+		border: 1px solid #fff;
+		/*margin-top: -35px;*/
+		z-index: 2;
+		background-color: map-get($colors, primary);
+	}
+	.form-icon {
+		color: #999999;
+		/*color: #ccc;*/
+	    font-size: 25px;
+	}
+	.item-block:first-child {
+	    border-top: 0.55px solid transparent !important;
+	}
+	.item-block:last-child {
+	    border-bottom: 0.55px #c8c7cc transparent !important;
+	}
+	.item
+	{
+		border-bottom: 0.55px solid #c8c7cc !important;
+		padding: 5px !important;
+	}
+	.label-name
+	{
+		color: #999999 !important;
+	}
+	.form-icon {
+		color: #999999;
+		/*color: #ccc;*/
+	    font-size: 25px;
+	}
+	.item-block:first-child {
+	    border-top: 0.55px solid transparent !important;
+	}
+	.item-block:last-child {
+	    border-bottom: 0.55px #c8c7cc transparent !important;
+	}
+	.item
+	{
+		border-bottom: 0.55px solid #c8c7cc !important;
+		padding: 5px !important;
+	}
+	.label-name
+	{
+		color: #999999 !important;
+	}
+	.form-group
+	{
+		/*height: 120px !important;
+		width: 100% !important;
+		margin-top: 20px !important;
+		border: 1px solid #c8c7cc !important;*/
+	}
+	.form-icon
+	{
+		width: 7% !important;
+		float: left !important;
+		margin-top: 7px !important;
+	}
+	.input
+	{
+		height: 45px !important;
+		width: 100% !important;
+		margin-top: 20px !important;
+		border: 1px solid #c8c7cc !important;
+	}
+	.select-ios {
+	    padding: 6px 8px 11px 16px !important;
+	}
+	ion-select {
+		max-width: 100% !important;
+	}
+	ion-icon {
+		font-size: 1em !important;
+		color: map-get($colors, primary) !important;
+	}
+
+}

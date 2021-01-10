@@ -1,0 +1,44 @@
+
+<ion-header>
+  <ion-navbar>
+  	<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Search Member</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+	<ion-searchbar
+	  [showCancelButton]="shouldShowCancel"
+	  (ionCancel)="onCancel($event)" #searchQuery class="search-bar" placeholder="ID/member number or name">
+	</ion-searchbar>
+	<button ion-button class="search-button" (click)="getUsersList()">Search</button>
+
+	<ion-list>
+
+		<div class="no-chats-title" *ngIf="usersData?.length == 0">
+			<br/>
+		  	<h6 class="centered">No user found!  </h6>
+		</div>
+
+		<ion-card *ngFor="let user of usersData" text-wrap padding>
+
+			<div class="chat-image" *ngIf="user.profile_image_url == '' || user.profile_image_url == 'null' || user.profile_image_url == null">
+				<img src="assets/imgs/user2.png">
+			</div>
+
+			<div class="chat-image" *ngIf="user.profile_image_url == '' && user.profile_image_url == 'null' && user.profile_image_url == null">
+				<img src="{{user.profile_image_url}}">
+			</div>
+
+			<div class="chat-details" (click)="viewUser(user.slug)">
+				<h2>{{user.first_name}} {{user.last_name}}</h2>	
+				<p>Member code: {{user.membership_code}}</p>
+			</div>
+
+		</ion-card>
+	</ion-list>
+
+</ion-content>
